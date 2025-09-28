@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedFlow Digital - Transforme Consultas em Crescimento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Flutuante -->
+    <header class="floating-header" id="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">⚕️</div>
+                <h2>MedFlow Digital</h2>
+            </div>
+            <nav class="nav">
+                <a href="#home">Início</a>
+                <a href="#processo">Como Funciona</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#calculadora">ROI</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="cta-btn">Agendar Consulta</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">💰 +300% de Faturamento Médico</span>
+                <h1>Transforme sua <span class="gradient-text">prática</span> em máquina de crescimento</h1>
+                <p class="hero-description">Sistema completo de marketing digital para médicos: da captação de pacientes ao fechamento de consultas. <strong>Aumente seu faturamento com nossa metodologia comprovada.</strong></p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Ver Como Funciona</button>
+                    <button class="btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Case de Sucesso
+                    </button>
+                </div>
+                <div class="hero-proof">
+                    <div class="proof-item">
+                        <span class="proof-number">+250%</span>
+                        <span class="proof-label">Aumento médio em consultas</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="proof-number">30 dias</span>
+                        <span class="proof-label">Para ver primeiros resultados</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="proof-number">97%</span>
+                        <span class="proof-label">Taxa de satisfação</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-tabs">
+                            <div class="tab active">📊 Dashboard</div>
+                            <div class="tab">👥 Leads</div>
+                            <div class="tab">💰 Vendas</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="metric-card">
+                            <span class="metric-label">Consultas Este Mês</span>
+                            <span class="metric-value" id="consultations-counter">0</span>
+                            <span class="metric-growth">+47% vs mês anterior</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Faturamento</span>
+                            <span class="metric-value">R$ <span id="revenue-counter">0</span>k</span>
+                            <span class="metric-growth">+128% vs mês anterior</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Taxa de Conversão</span>
+                            <span class="metric-value">87%</span>
+                            <span class="metric-growth">+23% vs mês anterior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo Section -->
+    <section class="processo" id="processo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Como Funciona</span>
+                <h2>Nossa metodologia <span class="gradient-text">comprovada</span> em 3 etapas</h2>
+                <p>Sistema completo que já gerou mais de R$ 50 milhões em faturamento para nossos clientes médicos</p>
+            </div>
+            
+            <div class="processo-flow">
+                <div class="processo-step" data-aos="fade-up">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">📢</div>
+                    <h3>Campanhas de Alto Impacto</h3>
+                    <p>Criamos campanhas segmentadas no Google Ads e Facebook, focadas no seu público-alvo específico. Cada anúncio é otimizado para atrair pacientes qualificados.</p>
+                    <div class="step-features">
+                        <span class="feature">✓ Segmentação por localização</span>
+                        <span class="feature">✓ Palavras-chave estratégicas</span>
+                        <span class="feature">✓ Landing pages otimizadas</span>
+                    </div>
+                </div>
+                
+                <div class="processo-arrow">→</div>
+                
+                <div class="processo-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🎯</div>
+                    <h3>Gestão Inteligente de Leads</h3>
+                    <p>Nosso CRM proprietário organiza, qualifica e nutre cada lead automaticamente. Nenhum paciente em potencial é perdido no processo.</p>
+                    <div class="step-features">
+                        <span class="feature">✓ Follow-up automático</span>
+                        <span class="feature">✓ Qualificação de leads</span>
+                        <span class="feature">✓ Relatórios em tempo real</span>
+                    </div>
+                </div>
+                
+                <div class="processo-arrow">→</div>
+                
+                <div class="processo-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">💰</div>
+                    <h3>Conversão em Consultas</h3>
+                    <p>Time de vendas treinado especificamente para área médica converte leads em agendamentos. Acompanhamos cada etapa até o fechamento.</p>
+                    <div class="step-features">
+                        <span class="feature">✓ Scripts otimizados</span>
+                        <span class="feature">✓ Agendamento facilitado</span>
+                        <span class="feature">✓ Relatórios de performance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados Section -->
+    <section class="resultados" id="resultados">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Resultados Comprovados</span>
+                <h2>Cases de <span class="gradient-text">sucesso</span> reais</h2>
+                <p>Médicos que transformaram suas práticas com nossa metodologia</p>
+            </div>
+            
+            <div class="cases-grid">
+                <div class="case-card" data-aos="fade-up">
+                    <div class="case-specialty">Dermatologista</div>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="metric-number">+380%</span>
+                            <span class="metric-label">Consultas/mês</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-number">R$ 180k</span>
+                            <span class="metric-label">Faturamento mensal</span>
+                        </div>
+                    </div>
+                    <p class="case-quote">"Em 4 meses saí de 20 para 96 consultas mensais. O ROI foi de 8:1 no investimento em marketing."</p>
+                    <div class="case-doctor">
+                        <div class="doctor-avatar">👨‍⚕️</div>
+                        <div class="doctor-info">
+                            <span class="doctor-name">Dr. Carlos Silva</span>
+                            <span class="doctor-location">São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-specialty">Ortopedista</div>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="metric-number">+250%</span>
+                            <span class="metric-label">Consultas/mês</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-number">R$ 240k</span>
+                            <span class="metric-label">Faturamento mensal</span>
+                        </div>
+                    </div>
+                    <p class="case-quote">"Minha agenda estava sempre vazia. Hoje tenho fila de espera e precisei contratar mais um colega."</p>
+                    <div class="case-doctor">
+                        <div class="doctor-avatar">👩‍⚕️</div>
+                        <div class="doctor-info">
+                            <span class="doctor-name">Dra. Ana Costa</span>
+                            <span class="doctor-location">Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="case-specialty">Cardiologista</div>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="metric-number">+420%</span>
+                            <span class="metric-label">Consultas/mês</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-number">R$ 320k</span>
+                            <span class="metric-label">Faturamento mensal</span>
+                        </div>
+                    </div>
+                    <p class="case-quote">"Resultado surpreendente. Em 6 meses triplicamos o faturamento e a qualidade dos pacientes melhorou muito."</p>
+                    <div class="case-doctor">
+                        <div class="doctor-avatar">👨‍⚕️</div>
+                        <div class="doctor-info">
+                            <span class="doctor-name">Dr. Roberto Lima</span>
+                            <span class="doctor-location">Belo Horizonte, MG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora ROI -->
+    <section class="calculadora" id="calculadora">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Calculadora de ROI</span>
+                <h2>Calcule seu <span class="gradient-text">potencial de crescimento</span></h2>
+                <p>Descubra quanto sua prática médica pode crescer com nossa metodologia</p>
+            </div>
+            
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label>Consultas por mês atualmente</label>
+                        <input type="number" id="current-consultations" placeholder="Ex: 30" min="1">
+                    </div>
+                    <div class="input-group">
+                        <label>Valor médio por consulta (R$)</label>
+                        <input type="number" id="consultation-value" placeholder="Ex: 200" min="1">
+                    </div>
+                    <div class="input-group">
+                        <label>Especialidade</label>
+                        <select id="specialty">
+                            <option value="2.5">Clínico Geral</option>
+                            <option value="3.2">Dermatologia</option>
+                            <option value="2.8">Cardiologia</option>
+                            <option value="3.5">Ortopedia</option>
+                            <option value="4.2">Cirurgia Plástica</option>
+                            <option value="3.0">Ginecologia</option>
+                        </select>
+                    </div>
+                    <button class="calculate-btn" onclick="calculateROI()">Calcular Potencial</button>
+                </div>
+                
+                <div class="calculator-results" id="calculator-results">
+                    <div class="result-item">
+                        <span class="result-label">Consultas projetadas/mês</span>
+                        <span class="result-value" id="projected-consultations">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Faturamento atual</span>
+                        <span class="result-value" id="current-revenue">R$ -</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Faturamento projetado</span>
+                        <span class="result-value" id="projected-revenue">R$ -</span>
+                    </div>
+                    <div class="result-highlight">
+                        <span class="result-label">Crescimento potencial</span>
+                        <span class="result-value growth" id="growth-potential">+ R$ -</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para transformar sua prática médica?</h2>
+                <p>Agende uma consultoria gratuita e descubra como podemos multiplicar seu faturamento em 90 dias</p>
+                <div class="cta-benefits">
+                    <span class="benefit">✓ Consultoria gratuita de 60 min</span>
+                    <span class="benefit">✓ Análise personalizada do seu nicho</span>
+                    <span class="benefit">✓ Estratégia customizada</span>
+                </div>
+                <button class="btn-primary large">Agendar Consultoria Gratuita</button>
+                <p class="cta-guarantee">🛡️ Sem compromisso • Resultados garantidos ou dinheiro de volta</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">⚕️</div>
+                        <h3>MedFlow Digital</h3>
+                    </div>
+                    <p>Transformando consultas em crescimento sustentável para médicos em todo o Brasil.</p>
+                    <div class="footer-contact">
+                        <span>📧 contato@medflowdigital.com</span>
+                        <span>📱 (11) 99999-9999</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Serviços</h4>
+                        <a href="#processo">Marketing Médico</a>
+                        <a href="#processo">CRM para Médicos</a>
+                        <a href="#processo">Gestão de Leads</a>
+                        <a href="#calculadora">Calculadora ROI</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Empresa</h4>
+                        <a href="#resultados">Cases de Sucesso</a>
+                        <a href="#contato">Contato</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedFlow Digital. Todos os direitos reservados. | CNPJ: XX.XXX.XXX/0001-XX</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
